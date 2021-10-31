@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head itemscope itemtype="http://schema.org/WebSite">
+
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="msapplication-tap-highlight" content="no">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <title>Project</title>
+
+   <link rel="stylesheet" href="./css/app.css">
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+
+   <script type="text/javascript" src="../build/app.js"></script>
+
+   <header>
+      <div class=header>
+         <section class="headerLogo">
+            <div class="logo">Teachinder</div>
+         </section>
+         <section class="headerSearch">
+            <input class="fieldSearch" type="text" name="search" placeholder="Enter name to search">
+            <button class="searchButton" type="submit">Search</button>
+         </section>
+      </div>
+      <div class="menu">
+         <div class="navMenu">
+            <nav>
+               <ul class="menuList">
+                  <li class="menuLi"><a href="#teachers">Teachers</a></li>
+                  <li class="menuLi"><a href="#statistics">Statistics</a></li>
+                  <li class="menuLi"><a href="#favorites">Favorites</a></li>
+                  <li class="menuLi"><a href="#about">About</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <button class="addButton js-button-campaign"> Add Teacher</button>
+   </header>
+
+   <main>
+      <hr class="split">
+      <article class="mainPart">
+         <section class="topTeachers">
+            <div class="headline">Top Teachers</div>
+            <div class="filter">
+               <form class="filterBy">
+                  Filter by:
+                  <label>
+                     <input type="checkbox" name="sortament" value="1">
+                     <span class="fieldFilter">Show only with photo </span>
+                  </label>
+                  <span class="splits"> | </span>
+                  <label>
+                     <input type="checkbox" name="sortament" value="2">
+                     <span class="fieldFilter">Show only favorites</span>
+                  </label>
+               </form>
+            </div>
+            <div class="filteredTeachers">
+               <div class="oneTeacher js-teacher-campaign">
+                  <figure class="round" >
+                     <img class="teacher-photo" src="./images/teacher2.jpg" alt="Teacher">
+                  </figure><br>
+                  <p class="fullName">Mykyta<br>Makeev<br></p>
+                  <p class="country">Ukraine</p>
+               </div>
+               <div class="oneTeacher">
+                  <figure class="round">
+                     <img class="teacher-photo" src="./images/teacher2.jpg" alt="Teacher">
+                  </figure><br>
+                  <p class="fullName">Vidit<br>Balakrishnan<br></p>
+                  <p class="country">India</p>
+               </div>
+               <div class="oneTeacher">
+                  <img class="full-star" src="images/full_star.png">
+                  <figure class="round">
+                     <img class="teacher-photo" src="./images/teacher.jpg" alt="Teacher">
+                  </figure><br>
+
+                  <p class="fullName">Erica<br>Jansen<br></p>
+                  <p class="country">Denmark</p>
+               </div>
+               <div class="oneTeacher">
+
+                  <figure class="round">
+                     <img class="teacher-photo" src="./images/teacher2.jpg" alt="Teacher">
+                  </figure><br>
+                  <p class="fullName">John<br>Burke<br></p>
+                  <p class="country">Belgium</p>
+               </div>
+               <div class="oneTeacher">
+                  <img class="full-star" src="images/full_star.png">
+                  <figure class="round">
+                     <img class="teacher-photo" src="./images/teacher.jpg" alt="Teacher">
+                  </figure><br>
+                  <p class="fullName">Ari<br>Tang<br></p>
+                  <p class="country">China</p>
+               </div>
+               <div class="oneTeacher">
+                  <figure class="round" >
+                     <img class="teacher-photo" src="./images/teacher.jpg" alt="Teacher">
+                  </figure><br>
+                  <p class="fullName">Rachel<br>Andrew<br></p>
+                  <p class="country">Ukraine</p>
+               </div>
+               <div class="oneTeacher">
+                  <figure class="round">
+                     <div class="initials">R.L</div>
+                  </figure><br>
+                  <p class="fullName">Radoslaw<br>Ljuboevic<br></p>
+                  <p class="country">Poland</p>
+               </div>
+               <div class="oneTeacher">
+                  <figure class="round">
+                     <div class="initials">A.M</div>
+                  </figure><br>
+                  <p class="fullName">Anna<br>Makarevich<br></p>
+                  <p class="country">Belarus</p>
+               </div>
+            </div>
+
+         </section>
+         <hr class="split">
+         <section class="statictics">
+            <div class="headline">Statistics</div>
+            <div class="tableStat">
+               <table class="statisticsTable">
+                  <thead>
+                     <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Nationality</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Daisy Alexander</td>
+                        <td>28</td>
+                        <td>Female</td>
+                        <td>Vietnam</td>
+                     </tr>
+                     <tr>
+                        <td>Julia Bradley</td>
+                        <td>26</td>
+                        <td>Female</td>
+                        <td>USA</td>
+                     </tr>
+                     <tr>
+                        <td>Rita Hart</td>
+                        <td>41</td>
+                        <td>Female</td>
+                        <td>Ireland</td>
+                     </tr>
+                     <tr>
+                        <td>Jonathan Jacobs</td>
+                        <td>32</td>
+                        <td>Male</td>
+                        <td>England</td>
+                     </tr>
+                     <tr>
+                        <td>Nathaniel White</td>
+                        <td>37</td>
+                        <td>Male</td>
+                        <td>Austria</td>
+                     </tr>
+                     <tr>
+                        <td>Frank Medina</td>
+                        <td>43</td>
+                        <td>Male</td>
+                        <td>Italy</td>
+                     </tr>
+                     <tr>
+                        <td>Ella Curtis</td>
+                        <td>34</td>
+                        <td>Female</td>
+                        <td>USA</td>
+                     </tr>
+                     <tr>
+                        <td>Claire Simmons</td>
+                        <td>38</td>
+                        <td>Female</td>
+                        <td>Netherlands</td>
+                     </tr>
+                     <tr>
+                        <td>Benjamin Knight</td>
+                        <td>44</td>
+                        <td>Male</td>
+                        <td>Scotland</td>
+                     </tr>
+                     <tr>
+                        <td>Norman Rose</td>
+                        <td>36</td>
+                        <td>Female</td>
+                        <td>France</td>
+                     </tr>
+                  </tbody>
+                  <tfoot>
+                     <tr>
+                        <td colspan="4" rowspan="2">
+                           <a href="#" class="numbers">1</a>
+                           <a href="#" class="numbers">2</a>
+                           <a href="#" class="numbers">3</a>
+                           <span>...</span>
+                           <a href="#" class="numbers">Last</a>
+                        </td>
+                     </tr>
+                  </tfoot>
+               </table>
+            </div>
+         </section>
+         <hr class="split">
+         <section class="favorites">
+            <div class="slider">
+               <div class="oneTeacher" id="teacher1">
+                  <figure class="round">
+                     <img class="teacher-photo" src="./images/teacher.jpg" alt="Teacher">
+                  </figure><br>
+                  <span class="fullName">Erica<br>Jansen<br></span>
+                  <span class="country">Denmark</span>
+               </div>
+               <div class="oneTeacher" id="teacher2">
+                  <figure class="round">
+                     <img class="teacher-photo" src="./images/teacher2.jpg" alt="Teacher">
+                  </figure><br>
+                  <span class="fullName">John<br>Burke<br></span>
+                  <span class="country">Belgium</span>
+               </div>
+               <div class="oneTeacher" id="teacher3">
+                  <figure class="round">
+                     <img class="teacher-photo" src="./images/teacher.jpg" alt="Teacher">
+                  </figure><br>
+                  <span class="fullName">Ari<br>Tang<br></span>
+                  <span class="country">China</span>
+               </div>
+               <div class="oneTeacher" id="teacher4">
+                  <figure class="round" >
+                     <img class="teacher-photo" src="./images/teacher.jpg" alt="Teacher">
+                  </figure><br>
+                  <span class="fullName">Rachel<br>Andrew<br></span>
+                  <span class="country">Ukraine</span>
+               </div>
+               <div class="oneTeacher" id="teacher5">
+                  <figure class="round">
+                     <div class="initials">R.L</div>
+                  </figure><br>
+                  <span class="fullName">Radoslaw<br>Ljuboevic<br></span>
+                  <span class="country">Poland</span>
+               </div>
+            </div>
+         </section>
+         <section class="about">
+            <div class="description">
+               <p>
+                  Lorem ipsum dolor sit amet, consecrator adipisicing alit. A atque facere, hic impedit itaque molestiae
+                  sit tempore?
+                  Ea
+                  in mollitia natus rerum voluptates. Ea ex excepturi facere tempora. Aliquid asperiores hic impedit
+                  iusto natus
+                  quaerat
+                  sit? Culpa iusto optio voluptas voluptate.
+                  Enim eveniet fugit iure maiores molestiae, praesentium quia.<br><br>
+
+                  Lorem ipsum dolor sit amet, consecrator adipisicing alit. Aliquam eligendi illum in inverntore ipsum
+                  odio officiis
+                  omins quisquam sed tempora?<br><br>
+
+                  Lorem ipsum dolor sit amet, consecrator adipisicing alit. A atque esse expedita id usto mollitia, odit
+                  sint ullam
+                  veritatis vero?
+               </p>
+            </div>
+
+         </section>
+      </article>
+   </main>
+   <div class="overlay js-overlay-campaign">
+      <div class="popup js-popup-campaign">
+         <form class="form" class="add_teacher">
+            <fieldset>
+               <h2>Add Teacher</h2>
+               <label for="full_name">Name</label><br>
+               <input class="input" type="text" name="fname" autocomplete="on" required><br>
+               <label for="country">Country </label><br>
+               <select name="country">
+                  <option selected>Ukraine</option>
+                  <option>Poland</option>
+                  <option>Russia</option>
+               </select><br>
+               <label for="city">City </label><br>
+               <input class="input" type="text" name="city" required><br>
+               <label for="phone">Phone </label><br>
+               <input class="input" type="number" name="phone" autocomplete="on" required><br>
+               <label for="email">Email </label><br>
+               <input class="input" name="email" id="email" aria-required="true" aria-invalid="false"
+                  onblur="checkValidity('email', '@', 'Invalid e-mail address');" /><br>
+               <label for="age">Age</label><br>
+               <input class="input" type="text" name="age" required><br>
+               <label for="sex">Sex </label>
+               <div class="right">
+                  <label for="male">Male</label>
+                  <input type="radio" name="sex" value="male" />
+                  <label for="female">Female</label>
+                  <input type="radio" name="sex" value="female" />
+               </div><br>
+               <div class="bcolour">
+                  <label for="bground">Background color:</label>
+                  <input class="right" type="color" name="bg" value="#FA8072">
+                  <img class="colours" src="images/colours.jpeg" alt="Colours"><br>
+               </div>
+
+               <input class="add" accesskey="a" type="submit" value="Add">​
+            </fieldset>
+         </form>
+         <div aria-label="Close" class="close-popup js-close-campaign"></div>
+      </div>
+   </div>
+   <div class="overlay-teacher js-overlay-teacher-campaign">
+      <div class="popup-teacher js-popup-teacher-campaign">
+         <h2>Teacher Info</h2>
+         <figure class="teacher-card">
+            <img src="images/teacher2.jpg" alt="Teacher">
+         </figure>
+         <div class="general-info">
+            <img class="star" src="images/star.png">
+            <h1>Mykyta Makeev</h1>
+            <p>Kyiv, Ukraine</p>
+            <p>34, M</p>
+            <p class="email">mykyta.makeev@domain.com</p>
+            <p>+380999910043</p>
+         </div>
+         <div class="clearfix"></div>
+         <div class="additional-info">
+            <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget est nisi.
+               Vivamus at nibh ut diam auctor luctus.
+               Duis ut nibh vel odio mollis efficitur. Cras fermentum ex erat, id tristique ligula elementum at.
+               Morbi facilisis augue
+               dolor, nec imperdiet urna gravida nec. Phasellus euismod mollis neque eget bibendum.
+               Nulla hendrerit, augue eu suscipit
+               pellentesque...
+            </p>
+            <a class="foo underline" href="toggle_map">toggle map</a>
+         </div>
+
+         <div aria-label="Close" class="close-popup js-close-campaign"></div>
+      </div>
+   </div>
+   </div>
+   <footer>
+      <div class="foNavMenu">
+         <nav>
+            <ul class="menuList">
+               <li class="menuLi"><a class="foo" href="#teachers">Teachers</a></li>
+               <li class="menuLi"><a class="foo" href="#statistics">Statistics</a></li>
+               <li class="menuLi"><a class="foo" href="#favorites">Favorites</a></li>
+               <li class="menuLi"><a class="foo" href="#about">About</a></li>
+            </ul>
+         </nav>
+      </div>
+      <button class="addButton js-button-campaign">Add Teacher</button>
+   </footer>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="./js/for_lab2.js"></script>
+</body>
+
+</html>

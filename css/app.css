@@ -1,0 +1,620 @@
+/* Import fonts */
+@import url('../fonts/Roboto.css');
+
+/* Reset and normalize */
+@import url('./normalize.css');
+
+@font-face {
+    font-family: 'ptsans'; 
+    src: url('../fonts/ptsans/PTS55F.ttf'); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+a, address, article, aside, audio, b, big, blockquote, body, canvas, caption, code, 
+dd, del, details, dfn, div, dl, dt, em, embed, figcaption, figure, footer, 
+form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, label, legend, li, 
+main, mark, menu, nav, ol, output, p, pre, q, s, samp, section, small, span, strong, sub, 
+summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: ptsans;
+}
+
+header,footer{
+    margin-bottom: 80px;
+}
+body {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media (min-width: 1000px) {
+    body {
+      max-width: 960px;
+    }
+}
+@media (max-width: 700px){
+    .slider {
+        display: flex;
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    .filteredTeachers{
+        margin-top: 50px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .oneTeacher{
+        width: 33%;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+    #teacher5, #teacher4{
+        visibility: hidden;
+        display: none
+    }
+    ul.menuList li{
+        margin-right: 30px;
+        font-size: 20px;
+        margin: 0px;
+    }
+    .menu{
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 90px;
+    }
+    .navMenu{
+        margin: 0px;
+        float: left;
+    }
+    header{
+        padding-bottom: 40px;
+    }
+    .round:hover{
+        border:  solid 3px;
+        color: #af3b2e;
+    }
+}
+@media (max-width: 850px) and (min-width: 700px){
+    .slider {
+        display: flex;
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    .filteredTeachers{
+        margin-top: 50px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        
+        }
+    .oneTeacher{
+        width: 25%;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+    #teacher5{
+        visibility: hidden;
+        display: none
+    }
+    .round:hover{
+        border:  solid 3px;
+        color: #af3b2e;
+    }
+} 
+@media (max-width: 850px){
+    .overlay-teacher{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        display: none;
+    }
+    .popup-teacher{
+        background-color: white;
+        border-width: 1px;
+        border-color: #666666;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 50px;
+        box-sizing: border-box;
+        width: 350px;
+    }
+    .teacher-card{
+        margin: 0px;
+    }
+    .teacher-card img{
+        margin-top: 10px;
+        width: 250px;
+        height: 250px;
+    }
+    .general-info{
+        display: grid;
+        line-height: 2;
+        float: right;
+        width: 250px;
+        text-align: center;
+        
+    }   
+}
+button {
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+}
+.headerLogo{
+    float: left;
+    margin-top: 10px;
+    
+}
+.headerSearch{
+    margin-top: 30px;
+    float: right;
+}
+.splits{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.logo {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 48px;
+    text-shadow: 2px 1px 0px black, -2px -1px 0px #f86d5e;
+    color: white;
+}
+
+.logo:hover{
+    color: rgb(233, 231, 231);
+    text-shadow: 3.5px 1px 0px black, -3.5px -1px 0px #f86d5e;
+    cursor: pointer;
+}
+
+.searchButton{
+    margin: 0px;
+    margin-left: 10px;
+    border-width: 1px;
+    border-color: #f86d5e;
+    width: 80px;
+    height: 35px;
+    color: #f86d5e;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.searchButton:hover{
+    border: none;
+    color: white;
+    background-color: #f86d5e;
+    cursor: pointer;
+}
+.fieldSearch{
+    width: 200px;
+    height: 35px;
+    margin: 0px; 
+}
+
+
+@media (min-width: 600px){
+    .menu{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px;
+}
+    .navMenu{
+    float: left;
+    margin-top: 10px;
+    
+}
+ul.menuList li{
+    display: inline;
+    margin-right: 30px;
+    font-size: 20px;
+}
+}
+a{
+    text-decoration: none;
+    color: #f86d5e;
+    font-weight: 300;
+}
+a:hover{
+    color: #b95044;
+    cursor: pointer;
+}
+.addButton{
+    float: right;
+    margin: 0px;
+    margin-left: 10px;
+    border-width: 1px;
+    border-color: #f86d5e;
+    width: 160px;
+    height: 40px;
+    color: #f86d5e;
+    font-weight: bold;
+    font-size: 18px;
+}
+.addButton:hover{
+    border: none;
+    color: white;
+    background-color: #f86d5e;
+    cursor: pointer;
+}
+.split {
+    border-top: 1px solid black;
+    width: 50%; 
+    margin: 50px 25% 50px 25%;
+}
+.headline{
+    padding-bottom: 40px;
+    font-size: 36px;
+}
+.filterBy{
+    float: left;
+    font-size: 14px;
+    
+}
+.fieldFilter{
+    color: rgb(151, 150, 150);
+}
+.fieldFilter:hover{
+    color: rgb(88, 85, 85);
+    cursor: pointer;
+}
+@media (min-width: 850px){
+    .filteredTeachers{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .oneTeacher{
+    width: 20%;
+    margin: 0px;
+    margin-bottom: 30px;
+    }
+}
+.round {
+    border:  solid 3px;
+    color: #f86d5e;
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.2s;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.round .teacher-photo{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.2s;
+  }
+
+.round:hover .teacher-photo {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.round:hover{
+    border:  solid 3px;
+    color: #af3b2e;
+}
+
+.initials{
+    font-weight: bold;
+    color: #f86d5e;
+    font-size: 20px;
+}
+.oneTeacher:hover .initials{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.fullName{
+    font-size: 18px;
+}
+.country{
+    font-size: 12px;
+    color: rgb(88, 85, 85);
+}
+.statisticsTable{
+    width: 100%;
+    margin: 0 -50 0 50px;
+    text-align: left;
+    font-size: 20px;
+    
+}
+th {
+    border-bottom: 3px solid #888585;
+    padding: 10px;
+    text-align: center;
+}
+th:first-child{
+    text-align: left;
+}
+th:hover{
+    border-bottom: 4px solid #353333;
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+}
+td {
+    padding: 10px;
+}
+td{
+    text-align: center;
+}
+td:first-child{
+    text-align: left;
+}
+tr:nth-child(odd) {
+    background: white;
+}
+tr:nth-child(even) {
+    background: #f8f2f1;
+}
+.numbers{
+    color: rgb(74, 142, 206);
+} 
+.numbers:focus{
+    color: rgb(0, 0, 0);
+}
+@media (min-width: 850px){
+    .slider {
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    }
+} 
+.slider::before {
+    position: absolute;
+    content: '';
+    top: 90px;
+    left: -20px;
+    border: solid rgb(114, 114, 114);
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+.slider::after {
+    position: absolute;
+    content: '';
+    top: 90px;
+    right: -20px;
+    border: solid rgb(114, 114, 114);
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+.description{
+    text-align: left;
+    font-size: 18px;
+    padding: 20px
+}
+
+.foNavMenu{
+    margin-top: 10px;
+    float: left;
+    position: relative;
+}
+.foo{
+    text-decoration: none;
+    color: #6f9dff;
+    
+}
+.foo:hover{
+    color: #2639a1;
+    cursor: pointer;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    display: none;
+}
+.popup{
+    background-color: white;
+    border-width: 1px;
+    border-color: #666666;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    box-sizing: border-box;
+}
+.close-popup{
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+.close-popup::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 10px;
+    top: 11px;
+    left: -4px;
+    transform: rotate(-45deg);
+    background-color: #646464;
+}
+.close-popup::after{
+    background-color: #646464;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 10px;
+    top: 11px;
+    left: -4px;
+    transform: rotate(45deg);
+}
+.add{
+    margin: 0px;
+    border-width: 1px;
+    border-color: #f86d5e;
+    width: 250px;
+    height: 45px;
+    color: #f86d5e;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: white;
+    margin-top: 30px;
+}
+.add:hover{
+    border: none;
+    color: white;
+    background-color: #f86d5e;
+    cursor: pointer;
+}
+.input, select{
+    width: 250px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+.right{
+    float: right;
+}
+.form{
+    text-align: left;
+    line-height: 1.5;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.bcolour{
+    margin-top: 20px;
+}
+.colours{
+    height: 20px;
+    float: right
+}
+@media (min-width: 850px){
+.overlay-teacher{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    display: none;
+}
+.popup-teacher{
+    background-color: white;
+    border-width: 1px;
+    border-color: #666666;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    box-sizing: border-box;
+    width: 900px;
+}
+.teacher-card{
+    margin: 0px;
+}
+.teacher-card img{
+    margin-top: 10px;
+    float: left;
+    width: 270px;
+    height: 270px;
+}
+.general-info{
+    line-height: 2;
+    float: right;
+    width: 530px;
+    padding-left: 40px;
+    text-align: left;
+    
+}
+.clearfix{
+    height: 300px;
+}
+}
+h1{
+    margin: 0px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.comment{
+    text-align: justify;
+}
+.underline{
+    border-bottom: 2px dashed;
+    float: left;
+    margin-top: 20px;
+}
+.email{
+    color: #6f9dff;
+}
+.star{
+    width: 40px;
+    height: 35px;
+    float: right;
+    margin-top: 35px;
+}
+.full-star{
+    width: 25px;
+    height: 22px;
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 10px;
+}
